@@ -22,6 +22,11 @@ pip install scrapy
 pip install scrapyd scrapyd-client
 ```
 
+升级scrapy
+```shell
+pip install scrapy scrapyd scrapyd-client --upgrade
+```
+
 ## Linux安装
 ### RHEL 7系列安装
 ```shell
@@ -29,6 +34,11 @@ sudo yum -y install epel-release
 sudo yum -y install python-devel openssl-devel libxml2-devel libxslt-devel libffi-devel cpp gcc python-six python-lxml python-cssselect python-cffi python-enum34 python-cffi python-zope-interface python-ipaddress python-cryptography python-pyasn1 python-pyasn1-modules python-idna python-ipython
 sudo pip install scrapy
 sudo pip install scrapyd scrapyd-client
+```
+
+升级scrapy
+```shell
+sudo pip install scrapy scrapyd scrapyd-client --upgrade
 ```
 
 ### CentOS 6系列安装
@@ -49,6 +59,12 @@ scl enable python27 "python -V"
 yum -y install openssl-devel libxml2-devel libxslt-devel libffi-devel cpp gcc python-cffi
 scl enable python27 "pip install scrapy"
 scl enable python27 "pip install scrapyd scrapyd-client"
+```
+
+升级scrapy
+```shell
+yum -y install openssl-devel libxml2-devel libxslt-devel libffi-devel cpp gcc python-cffi
+scl enable python27 "pip install scrapy scrapyd scrapyd-client --upgrade"
 ```
 
 安装scrapy结束后查看scrapy版本
