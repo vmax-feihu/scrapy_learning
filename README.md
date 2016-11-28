@@ -84,6 +84,13 @@ RUN yum -y install python-devel openssl-devel libxml2-devel libxslt-devel libffi
     pip install scrapyd scrapyd-client
 ```
 
+### 使用docker hub上的centos 7，基于python35安装scrapy
+```shell
+FROM centos:7
+MAINTAINER tanyaobin "tan.yaobin@hotmail.com"
+RUN yum install -y centos-release-scl gcc openssl-devel && yum install -y rh-python35 && scl enable rh-python35 "pip install --upgrade pip; pip install scrapy"
+```
+
 # 命令
 | 名称 | 作用域 | 含义 | 示例 |
 |-----|--------|------|------|
